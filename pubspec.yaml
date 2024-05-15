@@ -5,22 +5,29 @@ repository: https://github.com/fernan542/fl_country_code_picker
 issue_tracker: https://github.com/fernan542/fl_country_code_picker/issues
 
 environment:
-  sdk: ">=3.0.0 <4.0.0"
+  sdk: '>=3.4.0 <4.0.0'
 
 dependencies:
-  circle_flags: ^3.0.1
+  circle_flags: ^5.0.0
+
   flutter:
     sdk: flutter
+
   flutter_localizations:
     sdk: flutter
+  intl: any
+
   scrollable_positioned_list: ^0.3.8
 
 dev_dependencies:
+  flutter_lints: ^4.0.0
+
   flutter_test:
     sdk: flutter
-  mocktail: ^1.0.2
-  very_good_analysis: ^5.0.0+1
-  
+
+  mocktail: ^1.0.3
+  very_good_analysis: ^5.1.0
+
 
 flutter:
   assets:
