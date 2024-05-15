@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../demo.dart';
 
 class DefaultPickerView extends StatefulWidget {
-  const DefaultPickerView({Key? key}) : super(key: key);
+  const DefaultPickerView({super.key});
 
   @override
   State<DefaultPickerView> createState() => _DefaultPickerViewState();

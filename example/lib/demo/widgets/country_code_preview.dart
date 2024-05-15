@@ -6,9 +6,9 @@ const _previewTextStyle = TextStyle(fontSize: 18.0);
 
 class CountryCodePreview extends StatelessWidget {
   const CountryCodePreview({
-    Key? key,
+    super.key,
     required this.countryCode,
-  }) : super(key: key);
+  });
 
   final CountryCode countryCode;
 

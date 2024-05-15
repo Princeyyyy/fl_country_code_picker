@@ -10,7 +10,7 @@ const kFieldBorder = OutlineInputBorder(
 const kSpacer = SizedBox(height: 16.0);
 
 class DemoPage extends StatelessWidget {
-  const DemoPage({Key? key}) : super(key: key);
+  const DemoPage({super.key});
 
   @override
   Widget build(BuildContext context) {

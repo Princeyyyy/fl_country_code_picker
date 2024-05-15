@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import '../demo.dart';
 
 class FilteredPickerView extends StatefulWidget {
-  const FilteredPickerView({Key? key}) : super(key: key);
+  const FilteredPickerView({super.key});
 
   @override
   State<FilteredPickerView> createState() => _FilteredPickerViewState();

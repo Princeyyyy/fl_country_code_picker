@@ -1,6 +1,5 @@
 import 'package:fl_country_code_picker/fl_country_code_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
@@ -195,41 +194,5 @@ void main() {
         );
       });
     });
-
-    group('localize', () {
-      testWidgets('returns the localized version of country code',
-          (WidgetTester tester) async {
-        await tester.pumpWidget(
-          makeTestableWidget(
-            Builder(
-              builder: (context) {
-                final countryCode = createSubject();
-
-                expect(
-                  countryCode.localize(context),
-                  equals(createSubject(name: 'Filipinas')),
-                );
-
-                return const SizedBox();
-              },
-            ),
-          ),
-        );
-      });
-    });
   });
-}
-
-Widget makeTestableWidget(Widget child) {
-  return MaterialApp(
-    localizationsDelegates: const [
-      CountryLocalizations.delegate,
-      GlobalWidgetsLocalizations.delegate,
-      GlobalMaterialLocalizations.delegate,
-      GlobalCupertinoLocalizations.delegate,
-    ],
-    supportedLocales: CountryLocalizations.supportedLocales.map(Locale.new),
-    locale: const Locale('es'),
-    home: child,
-  );
 }

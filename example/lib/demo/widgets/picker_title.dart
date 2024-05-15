@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 class PickerTitle extends StatelessWidget {
   const PickerTitle({
-    Key? key,
+    super.key,
     required this.title,
-  }) : super(key: key);
+  });
   final String title;
   @override
   Widget build(BuildContext context) {
