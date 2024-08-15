@@ -1,7 +1,7 @@
 name: fl_country_code_picker
 description: A Flutter package for showing a modal that contains country dial code. The user can also search for the available codes and select right from the modal.
 version: 0.1.9+1
-repository: https://github.com/fernan542/fl_country_code_picker
+repository: https://github.com/Princeyyyy/fl_country_code_picker
 issue_tracker: https://github.com/fernan542/fl_country_code_picker/issues
 
 environment:
@@ -21,8 +21,8 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-  mocktail: ^1.0.3
-  very_good_analysis: ^5.1.0
+  mocktail: ^1.0.4
+  very_good_analysis: ^6.0.0
 
 
 flutter:
